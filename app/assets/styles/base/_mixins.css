@@ -1,25 +1,32 @@
+/*Sample mixin*/
+
 @define-mixin atSmall {
-  @media (min-width: 530px) {
-    @mixin-content;
-  }
+    @media(max-width: 730px){
+        @mixin-content;
+    }
 }
 
 @define-mixin atMedium {
-  @media (min-width: 800px) {
-    @mixin-content;
-  }
+    @media(min-width: 731px){
+        @mixin-content;
+    }
+}
+
+@define-mixin atMedium--height {
+    @media(min-height: 400px){
+        @mixin-content;
+    }
 }
 
 @define-mixin atLarge {
-  @media (min-width: 1010px) {
-    @mixin-content;
-  }
+    @media(min-width: 1000px){
+        @mixin-content;
+    }
 }
 
-@define-mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+@define-mixin atLargest {
+    @media(min-width: 1350px){
+        @mixin-content;
+    }
 }
+
