@@ -1,0 +1,315 @@
+.section-sub {
+    width: 100%;
+    height: 132vh;
+    background-color: #8a8a5c;
+
+    @mixin atMedium {
+        height: 280vh;
+
+        @mixin atMedium--height {
+            height: 230vh;
+        }        
+    }
+
+    @mixin atLarge {
+        height: 293vh;
+    }
+
+    @mixin atLargest {
+        height: 98vh;
+    }
+      
+    &--height {
+        height: 48vh;
+
+        @mixin atMedium {
+            height: 110vh;
+
+            @mixin atMedium--height {
+                height: 75vh;
+            }
+        }
+
+        @mixin atLarge {
+            height: 90vh;
+        }
+    }
+
+    &__form {
+            width: 50%;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: .6;
+
+            @mixin atMedium {
+                width: 40%;
+
+                @mixin atMedium--height {
+                    width: 55%;
+                }
+            }
+
+            @mixin atLargest {
+                width: 30%;
+            }
+
+            &__submit {
+                margin-left: 32.5%;
+                width: 35%;
+
+                @mixin atMedium {
+                    margin-left: 35%;
+                    font-size: 20px;
+                    width: 30%;
+
+                    @mixin atMedium--height {
+                        margin-left: 35.5%;
+                        font-size: 25px;
+                    }
+                }
+
+                @mixin atLargest {
+                    font-size: 30px;
+                    width: 27%;
+                    margin-left: 36%;
+            
+                }
+            }
+
+            &__input {
+                height: 30px;
+                width: 100%;
+                margin-bottom: 4px;
+
+                @mixin atMedium {
+                    
+                    @mixin atMedium--height {
+                        height: 40px;
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            textarea {
+                margin-top: 1px;
+                margin-bottom: 4px;
+                height: 75px;
+                font-size: 15px;
+                width: 100%;
+
+                @mixin atMedium {
+
+                    @mixin atMedium--height {
+                        height: 150px;
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                @mixin atLargest {
+                    width: 100%;
+                    
+                }
+            }
+    }
+    
+
+    &__paragraph {
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        font-size: 1.3rem;
+
+        @mixin atMedium {
+            padding-top: 90px;
+            padding-bottom: 28px;
+            font-size: 1.9rem;
+
+            @mixin atMedium--height {
+                font-size: 2.5rem;
+            }
+        }
+
+        @mixin atLargest {
+            font-size: 3rem;
+        }
+
+        &--font-size {
+            width: 80%;
+            font-size: 1.2rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            @mixin atMedium {
+                @mixin atMedium--height {
+                    font-size: 2rem;
+                }
+            }
+
+            @mixin atLargest {
+                width: 60%;
+            }
+        }
+    }
+
+    &--margin-top {
+       margin-top: 40px;
+    }
+
+    &--margin-bottom {
+        margin-bottom: 115px;
+    }
+
+    &__grid {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atLargest {
+            display: flex;
+    
+        }
+
+        
+        &__li {
+           width: 100%;
+           list-style: none;
+           text-align: center;
+           border: solid 1px black;
+           margin-top: 25px;
+           margin-bottom: 35px;
+           
+
+           @mixin atMedium {
+                width: 45%;
+                height: 71vh;
+                margin-left: auto;
+                margin-right: auto;
+
+                @mixin atMedium--height {
+                    width: 100%;
+                    height: 60vh;
+                    margin-bottom: 105px;
+                    margin-top: 45px;
+                }
+           }
+
+           @mixin atLarge {
+            width: 80%;
+            height: 75vh;
+           }
+
+           @mixin atLargest {
+            width: 40%;
+            height: 55vh;
+            margin-left: 55px;
+           }
+          
+            &__name {
+                padding-top: 15px;
+                padding-bottom: 7px;
+                font-size: 1.5rem;
+
+                @mixin atMedium {
+                    padding-top: 7px;
+                    padding-bottom: 1px;
+                    font-size: 1.5rem;
+
+                    @mixin atMedium--height {
+                        font-size: 2.1rem;
+                    }
+                }
+
+                @mixin atLarge {
+                    font-size: 2.4rem;
+                }
+            }
+
+            &__price {
+                padding-bottom: 13px;
+                font-size: 1.2rem;
+
+                @mixin atMedium {
+                    padding-bottom: 7px;
+                    font-size: 1.2rem;
+
+                    @mixin atMedium--height {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                @mixin atLarge {
+                    font-size: 1.8rem;
+                }
+            }
+
+            &__button {
+                width: 24%;
+                border-radius: 5%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 15px;
+                background-color: rgb(70, 61, 61);
+                
+                @mixin atMedium{
+                    margin-top: -10px;
+
+                    @mixin atMedium--height {
+                        margin-top: 4px;
+                        width: 20%;
+                    }
+                }
+
+                @mixin atLargest {
+                    width: 28%;
+                }
+
+                a {
+                    display: inline-block;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    color: yellow;
+                    padding-bottom: 3px;
+                    padding-top: 3px;
+
+                    @mixin atMedium{
+                        @mixin atMedium--height {
+                            font-size: 1.9rem;
+                        }
+                    }
+
+                    @mixin atLarge {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+
+            img {
+                height: 20vh;
+                width: 70%;
+                padding-bottom: 15px;
+
+                @mixin atMedium {
+                    height: 45vh;
+                    width: 75%;
+                }
+
+                @mixin atLarge {
+                    height: 53vh;
+                    width: 68%;
+                }
+
+                @mixin atLargest {
+                    height: 35vh;
+                    width: 78%;
+                }
+             }
+        
+            
+    
+            
+        }
+    }
+}

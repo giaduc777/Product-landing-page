@@ -1,0 +1,26 @@
+.footer-nav {
+    position: relative;
+    z-index: 7;
+    margin-top: 4rem;
+    background-color: black;
+    
+    p {
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 1.5rem;
+        color: white;
+        font-size: .8rem;
+
+        @mixin atMedium {
+            font-size: 1rem;
+
+            @mixin atMedium--height {
+                font-size: 1.2rem;
+            }
+        }
+
+        @mixin atLarge {
+            font-size: 1.4rem;
+        }
+    }
+}

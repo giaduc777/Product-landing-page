@@ -1,0 +1,45 @@
+.header-menu {
+  
+    display: flex;
+    opacity: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    
+  
+    @mixin atMedium {
+        position: fixed;
+        opacity: 1;
+        z-index: 6;
+        right: 2rem;
+        top: 1.3rem;
+
+        @mixin atMedium--height {
+            font-size: 1.35rem;
+            padding-top: 12px;
+        }
+    }
+  
+    @mixin atLarge {
+      font-size: 1.8rem;
+      top: 1rem;
+    }
+
+    @mixin atLargest {
+        font-size: 2rem;
+        padding-top: 18px;
+    }
+  
+    li {
+        margin-left: 2rem;
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    a:hover {
+        color:pink;
+    }
+    
+  }

@@ -1,0 +1,83 @@
+.section-main {
+    width: 100%;
+    height: 65vh;
+    background-color: #8a8a5c;
+
+    @mixin atMedium {
+        height: 160vh;
+
+        @mixin atMedium--height {
+            height: 90vh;
+        }
+    }
+
+    @mixin atLarge {
+        height: 140vh;
+    }
+
+    &__paragraph {
+        width: 80%;
+        padding-top: 100px;
+        padding-bottom: 55px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.1rem;
+
+        @mixin atMedium {
+            width: 70%;
+            padding-top: 160px;
+            padding-bottom: 65px;
+            font-size: 1.3rem;
+
+            @mixin atMedium--height {
+                width: 74%;
+                font-size: 1.5rem;
+                padding-top: 205px;
+                padding-bottom: 100px;
+            }
+        }
+
+        @mixin atLarge {
+            padding-top: 235px;
+            font-size: 1.9rem;
+        }
+
+        @mixin atLargest {
+            padding-top: 315px;
+            padding-bottom: 110px;
+            font-size: 2.3rem;
+        }
+    }
+
+    &__video {
+        width: 80%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atMedium {
+            width: 60%;
+            height: 38%;
+
+            @mixin atMedium--height {
+                width: 80%;
+                height: 50%;
+            }
+        }
+
+        @mixin atLarge {
+            width: 80%;
+            height: 45%;
+        }
+
+        @mixin atLargest {
+            width: 55%;
+            height: 45%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
