@@ -1,16 +1,12 @@
 .section-main {
-    position: relative;
+   
     display: flex;
+    top: 7vh;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: 60vh;
+    height: 50vh;
     background-color: #a0a04d;
-
-    &__bucket { 
-       
-    }
-    
 
     &__paragraph {
         width: 80%;
@@ -21,31 +17,11 @@
     }
 
     &__video {
-        width: 80%;
+        width: 30%;
         height: 95%;
         margin-left: auto;
         margin-right: auto;
        padding-top: 2rem;
-
-        @mixin atMedium {
-            width: 60%;
-            height: 38%;
-
-            @mixin atMedium--height {
-                width: 80%;
-                height: 50%;
-            }
-        }
-
-        @mixin atLarge {
-            width: 80%;
-            height: 45%;
-        }
-
-        @mixin atLargest {
-            width: 55%;
-            height: 45%;
-        }
 
         iframe {
             width: 100%;

@@ -1,4 +1,5 @@
-.header {display: flex;
+.header {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +14,7 @@
         img {
             
             width: 37%;
-            height: 8.9vh;
+            height: 8.4vh;
             border: .1rem black solid;
             margin-left: 1.1rem;
         }

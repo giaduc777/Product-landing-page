@@ -437,7 +437,9 @@ html {
 
 /*Sample mixin*/
 
-.header {display: -ms-flexbox;display: flex;
+.header {
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -450,7 +452,7 @@ html {
 
 .header__logo img {
   width: 37%;
-  height: 8.9vh;
+  height: 8.4vh;
   border: .1rem black solid;
   margin-left: 1.1rem;
 }
@@ -471,13 +473,10 @@ html {
   color: white;
 }
 
-.header-menu a:hover {
-  color:pink;
-}
-
 .footer-nav {
-    position: relative;
+    
    display: -ms-flexbox;
+    
    display: flex;
    -ms-flex-direction: column;
        flex-direction: column;
@@ -506,20 +505,83 @@ html {
   font-size: .8rem;
 }
 
+@media(max-width: 730px) {
+
+  .mobile-button {
+    position: fixed;
+    top: .7rem;
+    right: 1rem;
+    z-index: 6;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  .mobile-button__top {
+    position: fixed;
+    top: 15px;
+    right: 1rem;
+    background-color: white;
+    width: 24px;
+    height: 2px;
+    transform-origin: 0 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+  }
+
+  .mobile-button__top--line {
+    transform: rotate(43deg) scaleX(1.01);
+  }
+
+  .mobile-button__middle {
+    position: fixed;
+    top: 22px;
+    right: 1rem;
+    background-color: white;
+    width: 24px;
+    height: 2px;
+    transform-origin: 0 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+  }
+
+  .mobile-button__middle--line {
+    transform: scaleX(0);
+  }
+
+  .mobile-button__bottom {
+    position: fixed;
+    top: 30px;
+    right: 1rem;
+    background-color: white;
+    width: 24px;
+    height: 2px;
+    transform-origin: 0 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+  }
+
+  .mobile-button__bottom--line {
+    transform: rotate(-42deg) scaleX(.99) translateX(-1.8px);
+  }
+}
+
 .section-main {
-    position: relative;
+   
     display: -ms-flexbox;
+   
     display: flex;
+    top: 7vh;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
     width: 100%;
-    min-height: 60vh;
+    height: 50vh;
     background-color: #a0a04d;
 }
-
-.section-main__bucket {}
 
 .section-main__paragraph {
   width: 80%;
@@ -529,43 +591,11 @@ html {
 }
 
 .section-main__video {
-  width: 80%;
+  width: 30%;
   height: 95%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
-}
-
-@media(min-width: 731px) {
-
-  .section-main__video {
-    width: 60%;
-    height: 38%;
-  }
-
-  @media(min-height: 400px) {
-
-    .section-main__video {
-      width: 80%;
-      height: 50%;
-    }
-  }
-}
-
-@media(min-width: 1000px) {
-
-  .section-main__video {
-    width: 80%;
-    height: 45%;
-  }
-}
-
-@media(min-width: 1350px) {
-
-  .section-main__video {
-    width: 55%;
-    height: 45%;
-  }
 }
 
 .section-main__video iframe {
@@ -574,29 +604,23 @@ html {
 }
 
 .section-sub {
+    
     display: -ms-flexbox;
+    
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-   
     width: 100%;
     min-height: 95vh;
     background-color: #62eb40;
 }
 
 .section-sub__paragraph {
-  width: 100%;
+  width: 90%;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  font-size: 1.3rem;
-}
-
-.section-sub__paragraph--font-size {
-  width: 80%;
-  font-size: 1.2rem;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.8rem;
 }
 
 .section-sub__grid {
@@ -613,23 +637,37 @@ html {
 }
 
 .section-sub__grid__li {
-  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width:70%;
   list-style: none;
-  text-align: center;
   border: solid 1px black;
   margin-bottom: 3rem;
 }
 
 .section-sub__grid__li__name {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding-bottom: .2rem;
+  padding-top: .3rem;
 }
 
 .section-sub__grid__li__price {
   font-size: 1.2rem;
+  padding-bottom: .4rem;
 }
 
 .section-sub__grid__li button {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  max-width: 4rem;
+  background-color: yellow;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  margin-top: .5rem;
+  margin-bottom: .4rem;
 }
 
 .section-sub__grid__li img {
