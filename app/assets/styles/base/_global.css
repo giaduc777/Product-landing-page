@@ -6,8 +6,6 @@
 
 body {
     background-color: #f0604d;
-}
-
-html {
-    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }

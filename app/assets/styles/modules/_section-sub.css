@@ -3,19 +3,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 95vh;
+    min-height: 65vh;
     background-color: #62eb40;
-
-    @mixin atMedium {
-        
-        @mixin atMedium--height {
-            margin-bottom: -12rem;
-          }
-    }
-
-    @mixin atMedium--height {
-        min-height: 75vh;
-      }
 
     &__paragraph {
         width: 80%;
@@ -32,6 +21,7 @@
 
         @mixin atLarge {
             font-size: 2.4rem;
+            
         }        
        
     }
@@ -43,6 +33,7 @@
         margin: auto;
         justify-content: center;
         width: 90%;
+
         
         &__li {
            display: flex;
@@ -59,7 +50,7 @@
            }
 
            @mixin atLarge {
-            margin-bottom: 15rem;
+            margin-bottom: 7rem;
             
            }        
         
@@ -171,6 +162,9 @@
     }
 
     &--contact-margin {
+
+        
+
         @mixin atMedium {
         
             @mixin atMedium--height {

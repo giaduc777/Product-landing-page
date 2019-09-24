@@ -1,5 +1,5 @@
 .footer-nav {
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -9,7 +9,7 @@
         justify-content: space-around;
         font-size: 2.5rem;
         list-style: none;
-        padding-top: .7rem;
+        
 
         @mixin atMedium {
             font-size: 3.3rem;
