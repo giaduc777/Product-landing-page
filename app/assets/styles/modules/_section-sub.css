@@ -1,26 +1,30 @@
 .section-sub {
-    position: relative;
+   
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
-    min-height: 65vh;
+    height: 75rem;
     background-color: #62eb40;
+
+
+    @mixin atMedium {
+           height: 30rem;
+    }
 
     &__paragraph {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 4.5rem;
-        padding-bottom: 3rem;
+        text-align: center;
         font-size: 1.8rem;
 
         @mixin atMedium {
-            text-align: center;
-            padding-top: 6rem;
+           
         }
 
         @mixin atLarge {
-            font-size: 2.4rem;
+          
             
         }        
        
@@ -28,82 +32,77 @@
 
     &__grid {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        
+        align-items: center;
         margin: auto;
-        justify-content: center;
         width: 90%;
+        
+
+        @mixin atMedium {
+            flex-direction: row;
+            
+        }
+
 
         
         &__li {
            display: flex;
            flex-direction: column;
+           justify-content: space-evenly;
            align-items: center;
            width: 93%;
+           height: 20rem;
            list-style: none;
            border: solid 1px black;
-           margin-bottom: 3rem;
+           margin-bottom: 3em;
+         
 
+           
            @mixin atMedium {
-               width: 28%;
-               margin-right: 2rem;
-           }
-
-           @mixin atLarge {
-            margin-bottom: 7rem;
-            
+            margin-left: 1rem;
            }        
         
           
             &__name {
                 font-size: 1.6rem;
-                padding-bottom: .2rem;
-                padding-top: .3rem;
+               
 
                 @mixin atLarge {
-                    font-size: 2rem;
+                    
                 }        
             }
 
             &__price {
                 font-size: 1.2rem;
-                padding-bottom: .4rem;
-
+             
                 @mixin atLarge {
-                    font-size: 1.5rem;
+                   
                 }        
             }
 
             button {
                 font-size: 1.7rem;
-                max-width: 5rem;
+                width: 5rem;
                 background-color: yellow;
-                padding-left: .2rem;
-                padding-right: .2rem;
-                margin-top: .7rem;
-                margin-bottom: .7rem;
+               
             }
 
             img {
                 
                 
-                height: 29vh;
+                height: 70%;
                 width: 88%;
 
                 @mixin atMedium {
-                    height:37vh;
-                    width: 98%;
-                    padding-left: .44rem;
-                    padding-right: .44rem;
-
+                   
                     @mixin atMedium--height {
-                        height:18vh;
-                        width: 100%;
+                      
                     }
                 }
 
                 @mixin atLarge {
-                   height: 36vh;
+                  
                    
                  }        
              }
@@ -112,35 +111,34 @@
     }
 
     &--height {
-        min-height: 78vh;
+        
 
         @mixin atMedium {
-            padding-bottom: 2rem;
+            
           }
           
     }
 
     &__form {
         width: 50%;
-        padding-top: 10px;
+       
         margin-left: auto;
         margin-right: auto;
         opacity: .6;
 
         &__submit {
-            margin-left: 32.5%;
+           
             width: 35%;
 
             @mixin atLarge {
-                height: 45px;
-                font-size: 1.6rem;
+                
             }        
         }
 
         &__input {
             height: 30px;
             width: 100%;
-            margin-bottom: 4px;
+           
 
             @mixin atLarge {
                 height: 50px;
@@ -149,14 +147,12 @@
         }
 
         textarea {
-            margin-top: 1px;
-            margin-bottom: 4px;
+           
             height: 75px;
             width: 100%;
 
             @mixin atLarge {
-                font-size: 1.4rem;
-                height: 100px;
+               
             }        
         }
     }
@@ -168,14 +164,12 @@
         @mixin atMedium {
         
             @mixin atMedium--height {
-                margin-bottom: 0;
-                min-height: 65vh;
-
+                
               }
         }
 
         @mixin atLarge {
-            min-height: 95vh;
+           
             
           }        
     }

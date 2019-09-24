@@ -1,32 +1,32 @@
 /*Sample mixin*/
 
 @define-mixin atSmall {
-    @media(max-width: 730px){
+    @media(max-width: 45.6rem){
         @mixin-content;
     }
 }
 
 @define-mixin atMedium {
-    @media(min-width: 731px){
+    @media(min-width: 45.7rem){
         @mixin-content;
     }
 }
 
 
 @define-mixin atMedium--height {
-    @media(min-height: 400px){
+    @media(min-height: 25rem){
         @mixin-content;
     }
 }
 
 @define-mixin atLarge {
-    @media(min-width: 1000px){
+    @media(min-width: 62.5rem){
         @mixin-content;
     }
 }
 
 @define-mixin atLargest {
-    @media(min-width: 1350px){
+    @media(min-width: 84.3rem){
         @mixin-content;
     }
 }

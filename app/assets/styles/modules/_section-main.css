@@ -1,88 +1,87 @@
 .section-main {
-    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
     width: 100%;
-    min-height: 63vh;
+    height: 26rem;
     background-color: #a0a04d;
-    padding-bottom: 2rem;
-    padding-top: 7rem;
+    padding-bottom: 3rem;
 
     @mixin atMedium {
-        min-height: 150%;
+        justify-content: center;
+        
         @mixin atMedium--height {
-           padding-bottom: 4rem;
+
        
           }
     }
 
     
     &__paragraph {
-       
+        
+       padding-top: 6em;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         font-size: 1.1rem;
         font-weight: bold;
+       
 
         @mixin atMedium {
-            font-size: 1.34rem;      
-            padding-top: 3rem;  
+           
+           
             
             @mixin atMedium--height {
-                font-size: 1.4rem;     
-                padding-bottom: 2rem;
+               
+               
               }
         }
 
         @mixin atLarge {
-            font-size: 1.6rem;  
+           
         }
 
         @mixin atLargest {
-            font-size: 2rem;  
-            width: 65%;
-            padding-top: 7rem;
+            
+           
         }        
     }
 
     &__video {
-
-        min-width: 38%;
-        min-height: 35vh;
+        padding-top: 2em;
+        width: 22em;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 2.5rem;
-
+        
+      
         iframe {
+          
             width: 100%;
-            min-height: 30vh;
+            height: 100%;
 
             @mixin atLargest {
                
-                min-height: 60vh;
+               
             }        
         }
         
         @mixin atMedium {
-            width: 44%;
-            min-height: 75vh;
+           
 
             @mixin atMedium--height {
-                width: 80%;
-                min-height: 51vh;
+                
               }
         }
 
         @mixin atLarge {
-            width: 55%;
-            height: 50vh;
+           
         }        
 
         @mixin atLargest {
-            width:50%;
-            padding-bottom: 32rem;
+           
         }        
        
         
