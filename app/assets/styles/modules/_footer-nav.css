@@ -1,7 +1,7 @@
 .footer-nav {
     
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
     background-color: black;
 
     &__grid {
@@ -11,9 +11,28 @@
         list-style: none;
         padding-top: .7rem;
 
-    a {
-        color: white;
-    }
+        @mixin atMedium {
+            font-size: 3.3rem;
+            padding-top: 1rem;
+        }
+
+        @mixin atLarge {
+
+            justify-content: flex-end;
+        }        
+        
+        li {
+
+            @mixin atLarge {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }        
+    
+        }
+
+        a {
+            color: white;
+        }
     }
     
     p {
@@ -22,5 +41,9 @@
         padding-top: 1.5rem;
         color: white;
         font-size: .8rem;
+
+        @mixin atMedium {
+            font-size: 1rem;
+        }
     }
 }

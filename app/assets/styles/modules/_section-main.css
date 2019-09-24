@@ -1,13 +1,29 @@
 .section-main {
-   
+    position: relative;
     display: flex;
-  
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
     height: 63vh;
     background-color: #a0a04d;
     padding-bottom: 2rem;
+    padding-top: 7rem;
+
+    @mixin atMedium {
+        height: 105vh;
+
+        @mixin atMedium--height {
+            height: 75vh;
+          }
+    }
+
+    @mixin atLargest {
+       min-height: 110vh;
+    }        
+
+    @mixin atLarge {
+        height: 87vh;
+    }
 
     &__paragraph {
        
@@ -15,16 +31,54 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 1.1rem;
-        top: 9vh;
+        font-weight: bold;
+
+        @mixin atMedium {
+            font-size: 1.34rem;        
+            
+            @mixin atMedium--height {
+                font-size: 1.4rem;     
+                padding-bottom: 2rem;
+              }
+        }
+
+        @mixin atLarge {
+            font-size: 1.6rem;  
+        }
+
+        @mixin atLargest {
+            font-size: 2rem;  
+            width: 65%;
+        }        
     }
 
     &__video {
-      
+        
+        @mixin atMedium {
+            width: 44%;
+            height: 55vh;
+
+            @mixin atMedium--height {
+                width: 80%;
+                height: 45vh;
+              }
+        }
+
+        @mixin atLarge {
+            width: 55%;
+            height: 50vh;
+        }        
+
+        @mixin atLargest {
+            width: 50%;
+            height: 65vh;
+        }        
+       
         width: 88%;
         height: 35vh;
         margin-left: auto;
         margin-right: auto;
-       padding-top: 2rem;
+        padding-top: 2.5rem;
 
         iframe {
             width: 100%;

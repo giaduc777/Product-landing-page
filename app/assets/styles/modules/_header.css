@@ -1,23 +1,160 @@
 .header {
     display: flex;
+    justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 7vh;
+    min-height: 7.7vh;
     background-color: black;
     z-index: 10;
+    
+    @mixin atMedium {
+        min-height: 18vh;
 
+        @mixin atMedium--height {
+            min-height: 9vh;
+        }
+    }
+
+    @mixin atLarge {
+        height: 12vh;
+      }
 
     &__logo {
 
         img {
-            
-            width: 37%;
-            height: 8.4vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 31%;
+            height: 8.3vh;
             border: .1rem black solid;
             margin-left: 1.1rem;
+
+            @mixin atMedium {
+                width: 28%;
+                height: 22vh;
+                margin-left: 2.2rem;
+
+                @mixin atMedium--height {
+                    height: 11vh;
+                }
+            }
+
+            @mixin atLarge {
+                height: 14.5vh;
+            }
+
+            @mixin atLargest {
+                width: 18%;
+                margin-left: 3rem;
+            }        
         }
+    }
+
+
+    &__menu {
+        display: flex;
+        
+        opacity: 0;
+        list-style: none;
+        font-size: 1.4rem;
+        font-weight: 550;
+      
+        li {
+          padding-left: .3rem;
+          padding-right: 1rem;
+          padding-top: 1.2rem;
+    
+          @mixin atMedium {
+            z-index: 30;
+    
+            @mixin atMedium--height {
+              font-size: 1.6rem;
+              padding-top: 1.7rem;
+            }
+          }
+    
+          @mixin atLargest {
+            padding-right: 3rem;
+        }        
+        }
+        
+    
+        @mixin atMedium {
+          opacity: 1;
+          position: relative;
+        }
+        
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        
+      }
+
+    &__mobile-button {
+
+        @mixin atSmall {
+            position: fixed;
+            z-index: 16;
+           
+            
+            
+                &__top {
+                    position: fixed;
+                    top: 15px;
+                    right: 1rem;
+                    background-color: white;
+                    width: 24px;
+                    height: 2px;
+                    transform-origin: 0 0;
+                    transition-property: all;
+                    transition-duration: .3s;
+                    transition-timing-function: ease-in;
+                    
+                    &--line {
+                        transform: rotate(43deg) scaleX(1.01);
+                    }
+                }
+        
+                &__middle {
+                    position: fixed;
+                    top: 22px;
+                    right: 1rem;
+                    background-color: white;
+                    width: 24px;
+                    height: 2px;
+                    transform-origin: 0 0;
+                    transition-property: all;
+                    transition-duration: .3s;
+                    transition-timing-function: ease-in;
+                    
+                    &--line {
+                        transform: scaleX(0);
+                    }
+                    
+                }
+                    
+                &__bottom {
+                    position: fixed;
+                    top: 30px;
+                    right: 1rem;
+                    background-color: white;
+                    width: 24px;
+                    height: 2px;
+                    transform-origin: 0 0;
+                    transition-property: all;
+                    transition-duration: .3s;
+                    transition-timing-function: ease-in;
+                    
+                    &--line {
+                        transform: rotate(-42deg) scaleX(.99) translateX(-1.8px);
+                    }
+                    
+               }
+            }
     }
 
 }

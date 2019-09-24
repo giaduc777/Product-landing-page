@@ -11,3 +11,5 @@ new RevealOnScroll($(".testimonial"), "60%");
 var stickyHeader = new StickyHeader();
 var modal = new Modal();
 */
+import MobileMenu from './modules/MobileMenu';
+var mobileMenu = new MobileMenu();
