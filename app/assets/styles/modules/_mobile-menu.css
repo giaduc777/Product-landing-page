@@ -44,8 +44,4 @@
     &--is-visible {
         z-index: 20;
     }
-
-    &--invisible {
-        z-index: -20;
-    }
 }

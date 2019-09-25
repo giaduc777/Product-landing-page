@@ -96,9 +96,7 @@
 	    this.menuIconBottom = (0, _jquery2.default)(".header__mobile-button__bottom");
 	    this.menuScreen = (0, _jquery2.default)(".mobile-menu");
 	    this.body = (0, _jquery2.default)(".scroll-bar");
-
 	    this.home = (0, _jquery2.default)(".mobile-menu__nav__li");
-
 	    this.events();
 	  }
 
@@ -106,7 +104,6 @@
 	    key: "events",
 	    value: function events() {
 	      this.menuIcon.click(this.toggleTheMenu.bind(this));
-
 	      this.home.click(this.mobileMenu.bind(this));
 	    }
 	  }, {
@@ -118,12 +115,16 @@
 	      this.menuIconMiddle.toggleClass("header__mobile-button__middle--line");
 	      this.menuIconBottom.toggleClass("header__mobile-button__bottom--line");
 	      this.menuScreen.toggleClass("mobile-menu--is-visible");
-	      //this.body.toggleClass("scroll-bar--hide");
+	      this.body.toggleClass("scroll-bar--hide");
 	    }
 	  }, {
 	    key: "mobileMenu",
 	    value: function mobileMenu() {
-	      this.menuScreen.toggleClass("mobile-menu--invisible");
+	      this.menuScreen.removeClass("mobile-menu--is-visible");
+	      this.body.removeClass("scroll-bar--hide");
+	      this.menuIconTop.removeClass("header__mobile-button__top--line");
+	      this.menuIconMiddle.removeClass("header__mobile-button__middle--line");
+	      this.menuIconBottom.removeClass("header__mobile-button__bottom--line");
 	    }
 	  }]);
 

@@ -981,10 +981,6 @@ z-index: 10;
   z-index: 20;
 }
 
-.mobile-menu--invisible {
-  z-index: -20;
-}
-
 .section-contact {
     position: relative;
     z-index: 10;

@@ -8,15 +8,12 @@ class MobileMenu {
     this.menuIconBottom = $(".header__mobile-button__bottom");
     this.menuScreen = $(".mobile-menu");
     this.body = $(".scroll-bar");
-
     this.home = $(".mobile-menu__nav__li");
-
     this.events();
   }
 
   events() {
     this.menuIcon.click(this.toggleTheMenu.bind(this));
-
     this.home.click(this.mobileMenu.bind(this));
   }
 
@@ -27,11 +24,15 @@ class MobileMenu {
     this.menuIconMiddle.toggleClass("header__mobile-button__middle--line");
     this.menuIconBottom.toggleClass("header__mobile-button__bottom--line");
     this.menuScreen.toggleClass("mobile-menu--is-visible");
-    //this.body.toggleClass("scroll-bar--hide");
+    this.body.toggleClass("scroll-bar--hide");
   }
  
   mobileMenu() {
-    this.menuScreen.toggleClass("mobile-menu--invisible");
+    this.menuScreen.removeClass("mobile-menu--is-visible");
+    this.body.removeClass("scroll-bar--hide");
+    this.menuIconTop.removeClass("header__mobile-button__top--line");
+    this.menuIconMiddle.removeClass("header__mobile-button__middle--line");
+    this.menuIconBottom.removeClass("header__mobile-button__bottom--line");
   }
 
 }
