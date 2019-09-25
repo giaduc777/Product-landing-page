@@ -5,48 +5,28 @@
     justify-content: flex-end;
     
     width: 100%;
-    height: 26rem;
+    height: 30%;
     background-color: #a0a04d;
     padding-bottom: 3rem;
 
-    @mixin atMedium {
-        justify-content: center;
-        
-        @mixin atMedium--height {
-
-       
-          }
-    }
-
     
     &__paragraph {
-        
        padding-top: 6em;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         font-weight: bold;
-       
 
         @mixin atMedium {
-           
-           
-            
-            @mixin atMedium--height {
-               
-               
-              }
+            font-size: 1.35rem;
         }
 
         @mixin atLarge {
-           
-        }
-
-        @mixin atLargest {
-            
-           
-        }        
+            font-size: 1.55rem;
+            padding-bottom: 1em;
+          }
+       
     }
 
     &__video {
@@ -55,35 +35,28 @@
         height: 100%;
         margin-left: auto;
         margin-right: auto;
+
+
+        @mixin atMedium {
+            @mixin atMedium--height {
+                width: 65%;
+                height: 20em;
+            }
+        }
+
+        @mixin atLarge {
+            width: 65%;
+            height: 26em;
+    
+          }
+        
         
       
         iframe {
           
             width: 100%;
             height: 100%;
-
-            @mixin atLargest {
-               
-               
-            }        
         }
-        
-        @mixin atMedium {
-           
-
-            @mixin atMedium--height {
-                
-              }
-        }
-
-        @mixin atLarge {
-           
-        }        
-
-        @mixin atLargest {
-           
-        }        
-       
         
     }
 }

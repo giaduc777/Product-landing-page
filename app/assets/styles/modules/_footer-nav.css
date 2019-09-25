@@ -3,13 +3,20 @@
     flex-direction: column;
     background-color: black;
     justify-content: space-evenly;
-    height: 6rem;
+    height: 8%;
+    margin-top: 1.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 
     &__grid {
         display: flex;
         justify-content: space-around;
-        font-size: 3em;
+        font-size: 2.5rem;
         list-style: none;
+
+        @mixin atMedium {
+            font-size: 3.5rem;
+        }
         
         a {
             color: white;
@@ -18,9 +25,7 @@
     
     p {
         text-align: center;
-       
+        padding-top: 1em;
         color: white;
-        
-
     }
 }
