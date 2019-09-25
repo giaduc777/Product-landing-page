@@ -1,13 +1,17 @@
 .section-contact {
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 35%;
+    height: 10%;
+    background-color: rgb(197, 218, 218);
     
-
     @mixin atMedium {
         padding-top: 4em;
     }
+
+   
 
     &__paragraph {
         width: 20em;
@@ -20,23 +24,38 @@
             font-size: 1.3rem;
             font-weight: bold;
         }
+
+        @mixin atLargest {
+           width: 45%;
+           font-size: 1.8rem;
+        }
     }
 
     &__form {
+        position: relative;
         display: flex;
         flex-direction: column;
         margin: auto;
         align-items: center;
         width: 50%;
        
+       
         @mixin atMedium {
             width: 45%;
+        }
+        
+        @mixin atLargest {
+            width: 30%;
+            height: 20em;
+            justify-content: space-evenly;
         }
 
         &__submit {
             margin-left: auto;
             width: 100%;
             font-size: 1.4em;
+            cursor: pointer;
+            margin-bottom: 3em;
         }
 
         &__input {

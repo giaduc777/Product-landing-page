@@ -94,7 +94,7 @@
 	    this.menuIconTop = (0, _jquery2.default)(".header__mobile-button__top");
 	    this.menuIconMiddle = (0, _jquery2.default)(".header__mobile-button__middle");
 	    this.menuIconBottom = (0, _jquery2.default)(".header__mobile-button__bottom");
-	    this.menuScreen = (0, _jquery2.default)(".mobile-screen");
+	    this.menuScreen = (0, _jquery2.default)(".mobile");
 	    this.events();
 	  }
 
@@ -111,7 +111,7 @@
 	      this.menuIconTop.toggleClass("header__mobile-button__top--line");
 	      this.menuIconMiddle.toggleClass("header__mobile-button__middle--line");
 	      this.menuIconBottom.toggleClass("header__mobile-button__bottom--line");
-	      this.menuScreen.toggleClass("mobile-screen--is-visible");
+	      this.menuScreen.toggleClass("mobile__nav");
 	    }
 	  }]);
 

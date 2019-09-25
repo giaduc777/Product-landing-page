@@ -87,17 +87,17 @@
 
 
 
- <div class="mobile-screen">
-            <nav class="mobile-screen">
-                <hr class="mobile-screen__hr">
-                <li><a href="#">Home</a></li>
-                <hr class="mobile-screen__hr--short">
-                <li><a href="#toRods">Rods</a></li>
-                <hr class="mobile-screen__hr--short">
-                <li><a href="#toReels">Reels</a></li>
-                <hr class="mobile-screen__hr--short">
-                <li><a href="#toAcc">Acc</a></li>
-                <hr class="mobile-screen__hr--short">
-                <li><a href="#toContact">Contact</a></li>
-            </nav> 
-        </div>
+<div class="mobile-screen">
+    <nav class="mobile-screen">
+        <hr class="mobile-screen__hr">
+        <li><a href="#">Home</a></li>
+        <hr class="mobile-screen__hr--short">
+        <li><a href="#toRods">Rods</a></li>
+        <hr class="mobile-screen__hr--short">
+        <li><a href="#toReels">Reels</a></li>
+        <hr class="mobile-screen__hr--short">
+        <li><a href="#toAcc">Acc</a></li>
+        <hr class="mobile-screen__hr--short">
+        <li><a href="#toContact">Contact</a></li>
+    </nav> 
+</div>
