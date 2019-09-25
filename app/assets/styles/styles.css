@@ -4,6 +4,7 @@
 @import "base/_variables";
 
 @import "./modules/_header";
+@import "./modules/_scroll-bar";
 
 
 
@@ -13,7 +14,7 @@
 @import "./modules/_section-main";
 @import "./modules/_section-sub";
 
-@import "./modules/_mobile";
+@import "./modules/_mobile-menu";
 @import "./modules/_section-contact";
 
 
