@@ -474,6 +474,8 @@ html {
 }
 
 .header__logo {
+  position: ;
+  z-index: 15;
   height: 4.3em;
   width: 3em;
 }
@@ -509,6 +511,13 @@ html {
   font-weight: 550;
 }
 
+@media(min-width: 45.7rem) {
+
+  .header__menu {
+    opacity: 1;
+  }
+}
+
 @media(min-width: 62.5rem) {
 
   .header__menu {
@@ -525,22 +534,9 @@ html {
 }
 
 .header__menu li {
+  z-index: 15;
   padding-left: .3rem;
   padding-right: 1rem;
-}
-
-@media(min-width: 45.7rem) {
-
-  .header__menu li {
-    z-index: 30;
-  }
-}
-
-@media(min-width: 45.7rem) {
-
-  .header__menu {
-    opacity: 1;
-  }
 }
 
 .header__menu a {
@@ -612,6 +608,12 @@ html {
   .header__mobile-button__bottom--line {
     transform: rotate(-42deg) scaleX(.99) translateX(-1.8px);
   }
+}
+
+.header__layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .scroll-bar--hide {
